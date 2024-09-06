@@ -1,4 +1,4 @@
-##  ✈️ **Seu Guia Turístico Pessoal!** ✈️
+##  ✈️ **Seu Guia Turístico Pessoal!** ✈️ - Imersão DEV com Alura + Google Gemini
 
 **O que é esse projeto?**
 
