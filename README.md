@@ -1,5 +1,7 @@
 ##  ✈️ **Seu Guia Turístico Pessoal!** ✈️ - Imersão DEV com Alura + Google Gemini
 
+## 🗳️ Vote aqui >>> Se você gostou desse projeto e ESTÁ PARTICIPANDO da imersão, ative a generosidade, [VOTE AQUI](https://discord.com/channels/1277631721822748742/1277631722716008535)
+
 **O que é esse projeto?**
 
 É um guia de viagem online super bacana que te ajuda a encontrar o destino perfeito para sua próxima aventura!  Com ele, você pode pesquisar por cidades, países ou até mesmo por pontos turísticos específicos e descobrir um monte de informações legais sobre cada lugar. 
