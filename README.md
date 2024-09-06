@@ -1,6 +1,6 @@
 ##  ✈️ **Seu Guia Turístico Pessoal!** ✈️ - Imersão DEV com Alura + Google Gemini
 
-## 🗳️ Vote aqui >>> Se você gostou desse projeto e ESTÁ PARTICIPANDO da imersão, ative a generosidade, [VOTE AQUI](https://discord.com/channels/1277631721822748742/1277631722716008535)
+## 🗳️ Vote aqui >>> Se você gostou desse projeto e ESTÁ PARTICIPANDO da imersão, ative a generosidade, [VOTE AQUI](https://discord.com/channels/1277631721822748742/1277631722716008535/1281672204584489071)
 
 **O que é esse projeto?**
 
