@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Imersão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+    <header>
+        <div class="aviao"></div>
+        <h1 class="h1">Guia turístico desenvolvido por Alison Barbosa com Alura + Google Gemini</h1>
+        <h2 class="h2">Escolha o seu próximo Destino!</h2>
+    </header>
+   
+    <main>
+        <section>
+            <div class="search-container">
+            <input type="text" placeholder="Digite a cidade ou país que deseja conhecer." id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+            </div>
+        </section>
+    </div>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+
+            <!-- <div class="item-resultado">
+                <img src="https://turismoenrio.com/img/cristo-redentor-1.webp" alt="Rio de Janeiro" class="imagem">
+                <h2>Rio de Janeiro</h2>
+                <p><strong>Clima:</strong> Tropical úmido, com verões quentes e chuvosos e invernos amenos.</p>
+                <p><strong>Valor médio por dia:</strong> R$200,00 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Conhecida como a Cidade Maravilhosa, o Rio de Janeiro é famosa por suas praias, o Carnaval e o Cristo Redentor.</p>
+                <p><strong>População:</strong> Aproximadamente 6,7 milhões de habitantes.</p>
+                <p><strong>Lugares turísticos:</strong> Cristo Redentor, Copacabana, Maracanã, Corcovado.</p>
+                <a href="https://www.guiadeviagem.com/rio-de-janeiro" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <img src="https://clubelatino.com.br/wp-content/uploads/2018/08/sao-paulo.jpg" alt="São Paulo" class="imagem"> <h2>São Paulo</h2>
+                <p><strong>Clima:</strong> Subtropical, com verões quentes e úmidos e invernos amenos.</p>
+                <p><strong>Valor médio por dia:</strong> R$300,00 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Maior cidade da América do Sul, conhecida por sua diversidade cultural e economia vibrante.</p>
+                <p><strong>População:</strong> Aproximadamente 12,3 milhões de habitantes.</p>
+                <p><strong>Lugares turísticos:</strong> Avenida Paulista, Parque Ibirapuera, Museu de Arte de São Paulo (MASP), Pinacoteca.</p>
+                <a href="https://www.guiadeviagem.com/sao-paulo" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-barcelona-capa2019-01.jpg" alt="Barcelona" class="imagem">
+                <h2>Barcelona</h2>
+                <p><strong>Clima:</strong> Mediterrâneo, com verões quentes e secos e invernos amenos.</p>
+                <p><strong>Valor médio por dia:</strong> €100,00 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Conhecida por sua arquitetura modernista, liderada por Gaudí, e pela vibrante cultura catalã.</p>
+                <p><strong>População:</strong> Aproximadamente 1,6 milhões de habitantes.</p>
+                <p><strong>Lugares turísticos:</strong> Sagrada Família, Park Güell, La Rambla, Barceloneta.</p>
+                <a href="https://www.guiadeviagem.com/barcelona" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <img src="https://media.istockphoto.com/id/514769480/pt/foto/na-gran-via-madrid-espanha.jpg?s=1024x1024&w=is&k=20&c=ALp2QkX3ByA2R0EkgSk1u88A_hRDn-c7OWa2712BMyU=" alt="Madrid" class="imagem">
+                <h2>Madrid</h2>
+                <p><strong>Clima:</strong> Mediterrâneo continental, com verões quentes e secos e invernos frios.</p>
+                <p><strong>Valor médio por dia:</strong> €120,00 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Capital da Espanha, conhecida por sua rica história, vida noturna agitada e arquitetura impressionante.</p>
+                <p><strong>População:</strong> Aproximadamente 3,2 milhões de habitantes.</p>
+                <p><strong>Lugares turísticos:</strong> Puerta del Sol, Parque del Retiro, Museu do Prado, Palácio Real.</p>
+                <a href="https://www.guiadeviagem.com/madrid" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <img src="https://www.remessaonline.com.br/blog/wp-content/uploads/2022/06/morar-em-nova-york.jpg.optimal.jpg" alt="Nova York" class="imagem">
+                <h2>Nova York</h2>
+                <p><strong>Clima:</strong> Subtropical úmido, com verões quentes e úmidos e invernos frios.</p>
+                <p><strong>Valor médio por dia:</strong> US$250,00 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Conhecida como a Cidade que Nunca Dorme, Nova York é um centro financeiro e cultural global, famosa por seus arranha-céus, Broadway e a Estátua da Liberdade.</p>
+                <p><strong>População:</strong> Aproximadamente 8,8 milhões de habitantes.</p>
+                <p><strong>Lugares turísticos:</strong> Times Square, Central Park, Estátua da Liberdade, Empire State Building.</p>
+                <a href="https://www.guiadeviagem.com/nova-york" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <img src="https://static.portugalbywine.com/media//MULTIMEDIA/FOTOS/241/0003E8EE76BE3A.jpg" alt="Lisboa" class="imagem">
+                <h2>Lisboa</h2>
+                <p><strong>Clima:</strong> Mediterrâneo, com verões quentes e secos e invernos amenos.</p>
+                <p><strong>Valor médio por dia:</strong> €80,00 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Conhecida como a Cidade das Sete Colinas, Lisboa é famosa por sua arquitetura histórica, fado e culinária saborosa.</p>
+                <p><strong>População:</strong> Aproximadamente 505 mil habitantes.</p>
+                <p><strong>Lugares turísticos:</strong> Castelo de São Jorge, Bairro Alto, Belém, Jerónimos.</p>
+                <a href="https://www.guiadeviagem.com/lisboa" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <img src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/11/thinkstockphotos-4549879531.jpeg?quality=70" alt="Paris" class="imagem">
+                <h2>Paris</h2>
+                <p><strong>Clima:</strong> Oceânico, com verões amenos e invernos frios e úmidos.</p>
+                <p><strong>Valor médio por dia:</strong> €150,00 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Conhecida como a Cidade Luz, Paris é famosa por sua arte, moda, gastronomia e monumentos históricos como a Torre Eiffel.</p>
+                <p><strong>População:</strong> Aproximadamente 2,1 milhões de habitantes.</p>
+                <p><strong>Lugares turísticos:</strong> Torre Eiffel, Museu do Louvre, Catedral de Notre Dame, Champs-Élysées.</p>
+                <a href="https://www.guiadeviagem.com/paris" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <img src="https://guiaviajarmelhor.com.br/wp-content/uploads/2020/04/o_que_fazer_em_Londres_4.jpg" alt="Londres" class="imagem">
+                <h2>Londres</h2>
+                <p><strong>Clima:</strong> Oceânico, com verões amenos e invernos frios e úmidos.</p>
+                <p><strong>Valor médio por dia:</strong> £120,00 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Conhecida como a capital da Inglaterra, Londres é um centro financeiro e cultural global, famosa por seus monumentos históricos, museus e a Família Real.</p>
+                <p><strong>População:</strong> Aproximadamente 8,9 milhões de habitantes.</p>
+                <p><strong>Lugares turísticos:</strong> Big Ben, Palácio de Buckingham, London Eye, British Museum.</p>
+                <a href="https://www.guiadeviagem.com/londres" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <img src="https://blogmaladeviagem.com.br/wp-content/uploads/2022/11/blog-mv-buenos-aires8-1170x658.jpg.webp" alt="Buenos Aires" class="imagem">
+                <h2>Buenos Aires</h2>
+                <p><strong>Clima:</strong> Subtropical úmido, com verões quentes e úmidos e invernos amenos.</p>
+                <p><strong>Valor médio por dia:</strong> ARS 5000 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Conhecida como o "Paris da América Latina", Buenos Aires é famosa por sua arquitetura europeia, tango, e vida noturna agitada.</p>
+                <p><strong>População:</strong> Aproximadamente 3 milhões de habitantes.</p>
+                <p><strong>Lugares turísticos:</strong> Obelisco, La Boca, San Telmo, Palermo.</p>
+                <a href="https://www.guiadeviagem.com/buenosaires" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <img src="https://cdn.blablacar.com/wp-content/uploads/br/2024/03/05095949/santiago-chile.webp" alt="Santiago" class="imagem">
+                <h2>Santiago</h2>
+                <p><strong>Clima:</strong> Mediterrâneo, com verões quentes e secos e invernos frios.</p>
+                <p><strong>Valor médio por dia:</strong> CLP 50.000 (estimativa)</p>
+                <p><strong>Curiosidades:</strong> Conhecida como o Valle Central, Santiago é famosa por sua arquitetura colonial, vida noturna agitada e paisagens montanhosas.</p>
+                <p><strong>População:</strong> Aproximadamente 6 milhões de habitantes.</p>
+                <p><strong>Lugares turísticos:** Cerro San Cristóbal, Centro Histórico, La Chascona (casa de Pablo Neruda), Valle Nevado.</p>
+                <a href="https://www.guiadeviagem.com/santiago" target="_blank">Mais informações</a>
+            </div>
+             -->
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.instagram.com/eualisonbarbosa/" target="_blank">Alison Barbosa</a> na Imersão Dev <a href="https://www.alura.com.br/" target="_blank">Alura</a> + <a href="https://goo.gle/AluraGemini" target="_blank">Google Gemini</a>.
+        <br>Todos os direitos reservados - 2024</p>
+    </footer>
+
+<script src="dados.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
